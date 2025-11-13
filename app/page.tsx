@@ -1,10 +1,13 @@
-import Navigation from '@/components/Navigation';
-import Hero from '@/components/Hero';
-import Services from '@/components/Services';
-import Testimonials from '@/components/Testimonials';
-import Pricing from '@/components/Pricing';
-import ContactForm from '@/components/ContactForm';
-import Footer from '@/components/Footer';
+'use client';
+
+import { FormEvent } from 'react';
+import Navigation from '../components/Navigation';
+import Hero from '../components/Hero';
+import Services from '../components/Services';
+import Testimonials from '../components/Testimonials';
+import Pricing from '../components/Pricing';
+import ContactForm from '../components/ContactForm';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -16,9 +19,6 @@ export default function Home() {
       <Pricing />
       <ContactForm />
       <Footer />
-    </main>
-  );
-}
 
       {/* Contact Form - Supabase Integration */}
       <section className="py-16 bg-gray-50">
@@ -53,7 +53,9 @@ export default function Home() {
             <button type="submit" className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700">
               Send Message
             </button>
-          </
+          </form>
+        </div>
+      </section>
 
       {/* Pricing - Stripe Integration */}
       <section className="py-16 bg-white">
@@ -75,6 +77,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-form>
-        </div>
-      </section>
+    </main>
+  );
+}
